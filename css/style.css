@@ -1,0 +1,825 @@
+/* --- Tous les HERE sont là pour des truc à corriger au pour les issues de Thomas
+ctrl F -> HERE et vous les trouverez toutes ! --- */
+
+/* START HEADER  */
+
+html {
+    font-family: "Open Sans";
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* Main Content */
+
+
+/*ajout remi*/
+
+#quizContent {
+    background-color: rgb(249, 249, 249);
+    padding-bottom: 10%;
+    padding-top: 6%;
+}
+
+.mainContent {
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+
+/* Boutons de navigation du header  */
+
+#occitanieButton {
+    width: 50%;
+}
+
+.buttonBox {
+    display: flex;
+    margin-right: 0;
+    justify-content: center;
+    align-self: center;
+    width: 40%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C90205;
+    margin: 0 3%;
+    padding: 1% 3%;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.buttonImage1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #D9D9D9;
+    padding-right: 6%;
+    margin-right: 5%;
+}
+
+.buttonImage2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6%;
+    margin-right: 5%;
+}
+
+.buttonImage1 img {
+    width: 120%;
+}
+
+.buttonImage2 img {
+    width: 100%;
+}
+
+#iconHead {
+    margin-left: 20%;
+}
+
+
+/* Fond rouge */
+
+.red {
+    font-style: normal;
+    color: #C90205;
+}
+
+
+/* END HEADER */
+
+
+/* DEBUT INDEX.PHP / QUIZS */
+
+
+/* Titre page + titre question */
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#toppart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    width: 100%;
+    justify-content: center;
+}
+
+.titleCenter {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.7rem;
+    /*  background-image: url("../images/redchart.png");
+    background-repeat: no-repeat;
+    background-position: 0% 35%; */
+}
+
+.titleCenter img {
+    margin-right: -16%;
+    width: 28%;
+}
+
+
+/* Icone titre page */
+
+#chart {
+    width: 135px;
+    height: 50px;
+    margin-right: -9%;
+}
+
+
+/* Icone question */
+
+#circle {
+    width: 16px;
+    height: 16px;
+    margin-top: 1%;
+}
+
+
+/* Titre question */
+
+#question1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.7em;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#midpart {
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#titleQuestion {
+    width: 100%;
+    padding: 0;
+}
+
+
+/* Partie reponses */
+
+#reponses {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+
+/* Carré réponses */
+
+.reponse {
+    display: flex;
+    background: rgba(204, 204, 204, 0.5);
+    min-height: 140px;
+    min-width: 140px;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+/* Ajout fond rouge quand question est choisie */
+
+.selected {
+    background: #C90205;
+}
+
+
+/* Bouton Valider */
+
+#bouBot {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Bouton Valider */
+
+#bouValid {
+    color: white;
+    background: #C90205;
+    border: 0.5px solid #C90205;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 5px 37px 5px 37px;
+    font-size: 0.8rem;
+    margin-top: 5%;
+    margin-bottom: 9%;
+}
+
+
+/* Question "??" sur 4 */
+
+.pagination {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+    padding-top: 10px;
+    border-top: 1px solid #CCCCCC;
+    width: 95%;
+    color: #484848;
+    font-size: 0.9rem;
+}
+
+
+/* Copyright in footer */
+
+.copyright {
+    padding-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* FIN PAGE INDEX.PHP */
+
+
+/* DEBUT PAGE LEVEL.PHP / JEUX */
+
+
+/* DIV choix niveaux */
+
+.levels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* DIV etoiles */
+
+.stars {
+    min-height: 174px;
+    min-width: 258px;
+    border-radius: 10px;
+    margin: 10px 15px;
+}
+
+
+/* Placement etoiles */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Grosse etoile */
+
+.bigStar {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Petite etoile */
+
+.smallStar {
+    height: 54px;
+    width: 54px;
+}
+
+
+/* Placement etoiles 1er bouton */
+
+.decouvre {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Placement etoiles 2eme bouton */
+
+.approfond {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-self: center;
+    justify-self: center;
+    margin-right: 20px;
+}
+
+
+/* Placement etoiles 3eme bouton */
+
+.code {
+    display: flex;
+    width: 75%;
+    align-self: center;
+}
+
+
+/* DIV Tous les jeux */
+
+#gamesTotal {
+    width: 70%;
+    margin: auto;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+.games {
+    margin-top: 3%;
+}
+
+
+/* Image jeux */
+
+.picGame {
+    height: 250px;
+    width: 300px;
+}
+
+
+/* DIV des jeux séparés */
+
+.gameBox {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Titre jeux */
+
+.gameTitle {
+    align-self: center;
+}
+
+.gameText {
+    text-align: center;
+    line-height: 15px;
+}
+
+
+/* Developpeur jeux */
+
+.devTitle {
+    align-self: center;
+}
+
+
+/* Code utilisé par jeux */
+
+.whatCode {
+    padding: 5px 10px;
+    align-self: center;
+    border-radius: 40px;
+}
+
+
+/* Fond bleu pour Code */
+
+.backBlue {
+    background-color: #0046CE;
+}
+
+
+/* Fond doré pour Code */
+
+.backGold {
+    background-color: #CE7C00;
+    display: none;
+}
+
+
+/* Fond jaune pour Code */
+
+.backYellow {
+    background-color: #CEC600;
+}
+
+
+/* Fond rouge pour Code */
+
+.backRed {
+    background-color: #C90205;
+}
+
+#gameBox {
+    width: 100%;
+    height: 680px;
+    padding: 0;
+    margin: 0;
+}
+
+#gameBox iframe {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* FIN PAGE LEVEL.PHP */
+
+
+/* DEBUT STYLE QUESTIONNAIRE REMI*/
+
+ol {
+    padding: 0;
+}
+
+#app {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stylebutton {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.style-li {
+    list-style: none;
+}
+
+#testremiradio {
+    display: none;
+}
+
+.maHitbox {
+    border-radius: 10%;
+    display: block;
+    width: 145px;
+    height: 145px;
+    list-style: none;
+    background-color: #D9D9D9;
+    margin-bottom: 8%;
+    color: black;
+    transition: 0.4s;
+    margin: 15px;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.active {
+    background-color: #C90205;
+    transition: 0.4s;
+    color: white;
+}
+
+.maHitbox:hover {
+    transition: 0.4s;
+    background-color: #C90205;
+}
+
+.reponseBox {
+    padding: auto 2%;
+    padding-top: 20%;
+}
+
+.finalScore {
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: white;
+    width: 30%;
+    height: 400px;
+}
+
+.scoreContainer {
+    text-align: left;
+    text-align: left;
+    height: 76%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.scoreContainer a {
+    text-decoration: none;
+    border-top: 10%;
+}
+
+.scoreContainer img {
+    width: 30%;
+}
+
+#Master img {
+    width: 15%;
+}
+
+.textFinalScore {
+    font-size: 0.7em;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 2%;
+}
+
+
+#finalScoreButton {
+    margin-top: 12%;
+}
+
+.buttonsScore {
+    color: white;
+    background: #C90205;
+    border: 0.5px solid #C90205;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 3px 10px 3px 10px;
+    font-size: 0.8rem;
+}
+
+.buttonsScore img {
+    width: 20%;
+}
+
+#Master {
+    display: none;
+}
+
+#avance {
+    display: none;
+}
+
+#intermediaire {
+    display: none;
+}
+
+#debutant {
+    display: none;
+}
+
+
+/* FIN STYLE QUESTIONNAIRE */
+
+.scoring {
+    background-color: #C90205;
+    height: 190px;
+    color: white;
+    font-weight: 900;
+    width: 190px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+}
+
+
+/* le padding 20% c'est cracra */
+
+
+/* le padding 20% c'est cracra */
+
+.scoring p {
+    align-items: center;
+    padding-top: 22%;
+    font-size: 2rem;
+}
+
+.messageScoring {
+    margin-top: 2%;
+    font-weight: 900;
+}
+
+#buttonScore {
+    color: white;
+    background: #C90205;
+    border: 0.5px solid #C90205;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 4px 25px 4px 25px;
+}
+
+.superDivQuest {
+    display: flex;
+    justify-content: center;
+}
+
+.boxquest {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- STYLE SANDBOX --- */
+#codeSandbox {
+    width: 100%;
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+    .buttonBox {
+        width: 60%;
+    }
+    .stars {
+        margin: 10px 50px;
+        flex-wrap: wrap;
+    }
+    .gameBoxLeft {
+        margin-top: 5%;
+    }
+    #gamesTotal {
+        width: 50%;
+    }
+    .reponseBox {
+        padding-top: 20%;
+    }
+    .titleCenter img {
+        margin-right: -13%;
+    }
+    .questions {
+        width: 80%;
+    }
+    .finalScore {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 670px) and (max-width: 850px) {
+    .buttonBox {
+        width: 70%;
+    }
+    #allGamesTitle {
+        font-size: 2rem;
+        padding-top: 2%;
+    }
+    .finalScore {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #occitanieButton {
+        width: 20%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .buttonBox {
+        width: 80%;
+    }
+
+    .buttons {
+        font-size: 70%;
+    }
+
+    .titleCenter img {
+        margin-right: -17%;
+    }
+ 
+    #allGamesTitle {
+        font-size: 2rem;
+        padding-bottom: 5%;
+    }
+    #toppart {
+        width: 100%;
+    }
+    
+    .reponseScore {
+        width: 80%;
+        margin: 0 auto;
+    }
+  
+    .copyright {
+        font-size: 1rem;
+    }
+    #gamesTotal {
+        justify-content: center;
+    }
+    #box2 {
+        border-bottom: 1px gray solid;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    #box1 {
+        border-bottom: 1px gray solid;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .levels {
+        padding-bottom: 15px;
+        border-bottom: 1px gray solid;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+  
+    .finalScore {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .titleCenter img {
+        margin-right: -17%;
+        width: 30%;
+    }
+    .questions {
+        width: 80%;
+    }
+    .finalScore {
+        width: 60%;
+    }
+}
+/* TEST LOLO CSS VUE JS LEVEL PHP */
+
+.tab-content{
+    
+    overflow: hidden;
+    display: flex;
+  }
+
+  .tab-items{
+    
+    transition: transform .2s ease-in-out;
+    transform: translate3d(0, 0, 0);
+}
+
+.decouvre a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.decouvre a:hover {
+    color: red;
+    
+  }
+
+  /* button tous les jeux */
+
+  .myButton {
+	background-color:#325b99;
+	border-radius:40px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:6px 12px;
+    text-decoration:none;
+  }
+
+  .myButton2 {
+	background-color:#e0e637;
+	border-radius:40px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:6px 12px;
+    text-decoration:none;
+  }
+
+  .myButton3 {
+	background-color:#f50000;
+	border-radius:40px;
+	display:inline-block;
+	
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:6px 12px;
+	text-decoration:none;
+}
